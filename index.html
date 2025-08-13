@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahor 5 Restoran</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Bahor 5 Restoran</div>
+                <ul class="nav-links">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">Biz haqimizda</a></li>
+                    <li><a href="#contact">Bog'lanish</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <!-- BOSH VIDEO - O'zingizning videongizni qo'ying -->
+        <video autoplay muted loop id="heroVideo" style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+            <source src="https://videos.pexels.com/video-files/3371015/3371015-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Sizning brauzeringiz video formatini qo'llab-quvvatlamaydi.
+        </video>
+        <div class="hero-content">
+            <h1>Bahor 5 Restoranga xush kelibsiz</h1>
+            <p>An'anaviy taomlarimiz bilan mazali dam olish</p>
+            <a href="#menu" class="btn">Menyuni ko'rish</a>
+        </div>
+    </section>
+
+    <section class="video-section container" id="menu">
+        <h2>Bizning Taomlar</h2>
+        <div class="video-container">
+            <!-- ASOSIY VIDEO (Dastlab spaghetti ko'rsatiladi) -->
+            <video id="mainVideo" autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="https://videos.pexels.com/video-files/4058085/4058085-uhd_2732_1440_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay">
+                <h3 id="videoTitle">Spaghetti</h3>
+            </div>
+        </div>
+
+        <div class="food-nav">
+            <!-- SPAGHETTI -->
+            <div class="food-item active" data-video="https://videos.pexels.com/video-files/4058085/4058085-uhd_2732_1440_25fps.mp4" data-title="Spaghetti">
+                <img src="https://espanarusa.com/files/autoupload/43/73/89/bw4ilems397658.jpg" alt="Spaghetti" class="food-thumbnail">
+                <div class="food-name">Spaghetti</div>
+            </div>
+            
+            <!-- KOFE -->
+            <div class="food-item" data-video="https://cdn.pixabay.com/video/2025/03/03/262184_large.mp4" data-title="Kofe">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0XeFT3LDaHpdDBfbBhv6tGV7vw0hA6RctBQ&s" alt="Kofe" class="food-thumbnail">
+                <div class="food-name">Kofe</div>
+            </div>
+            
+            <!-- BLINCHIK -->
+            <div class="food-item" data-video="https://videos.pexels.com/video-files/3704910/3704910-uhd_2732_1440_25fps.mp4" data-title="Blinchik">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUbV7RHXugm-8R2CMNAc5i3EquRj5eSCAtBg&s" alt="Blinchik" class="food-thumbnail">
+                <div class="food-name">Blinchik</div>
+            </div>
+            <!-- Burger -->
+            <div class="food-item" data-video="https://videos.pexels.com/video-files/8879537/8879537-uhd_2732_1440_25fps.mp4" data-title="Burger">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4guNpCpmdtRB4QyoyTOOxz6NlshGhjBjjyg&s" alt="burger" class="food-thumbnail">
+                <div class="food-name">Burger</div>
+            </div>
+            <!-- Pitsa -->
+            <div class="food-item" data-video="https://videos.pexels.com/video-files/4008533/4008533-uhd_2732_1440_25fps.mp4" data-title="Pitsa">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXYdyfuOHBUJD9b3cmRxy6tGZGCd2ylQpR4A&s" alt="pitsa" class="food-thumbnail">
+                <div class="food-name">Pitsa</div>
+            </div>
+            <!-- Steak -->
+            <div class="food-item" data-video="https://videos.pexels.com/video-files/3209830/3209830-uhd_2560_1440_25fps.mp4" data-title="Stek">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98B3cw_Oey595LLHkqloqBSDM0Eva9l9ERQ&s" alt="steak" class="food-thumbnail">
+                <div class="food-name">Stek</div>
+            </div>
+            <!--  -->
+            <div class="food-item" data-video="https://videos.pexels.com/video-files/6162075/6162075-hd_1920_1080_30fps.mp4" data-title="Tovuq Go'shti">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNEwI65PvBG8qjKP6jk3ksRO-8McMJgqwijA&s" alt="chicken" class="food-thumbnail">
+                <div class="food-name">Tovuq Go'shti</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="about">
+        <h2>Biz haqimizda</h2>
+        <p>Bahor 5 Restoran 2024-yildan beri xizmat qilib kelmoqda. Biz an'anaviy taomlarni zamonaviy uslubda taqdim etamiz. Barcha mahsulotlarimiz tabiiy va sifatli xom ashyolardan tayyorlanadi.</p>
+        <p>Bizning oshpazlarimiz xalqaro va mahalliy tajribaga ega bo'lib, har bir taomga g'amxo'rlik bilan yondashadi.</p>
+    </section>
+
+    <section class="container" id="contact">
+        <h2>Biz bilan bog'lanish</h2>
+        <div class="alert alert-success" id="successAlert">
+            Xabaringiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz.
+        </div>
+        <div class="alert alert-error" id="errorAlert">
+            Xatolik yuz berdi. Iltimos, keyinroq qayta urinib ko'ring.
+        </div>
+        <form id="contactForm" class="contact">
+            <div class="form-group">
+                <label for="name">Ismingiz</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon raqamingiz</label>
+                <input type="tel" id="phone" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Xabaringiz</label>
+                <textarea id="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn">Xabarni yuborish</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bahor 5 Restoran. Barcha huquqlar himoyalangan.</p>
+            <p>Telegram : @Dilshod_Sayfiddinov</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
