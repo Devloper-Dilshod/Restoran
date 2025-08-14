@@ -19,13 +19,8 @@
             </nav>
         </div>
     </header>
-<audio id="background-music" autoplay loop>
-  <source src="https://pixabay.com/music/traditional-jazz-jazz-background-restaurant-146961/" type="audio/mpeg">
-  Sizning brauzeringiz audio-ni qo‘llab‑quvvatlamaydi.
-</audio>
 
     <section class="hero">
-        <!-- BOSH VIDEO - O'zingizning videongizni qo'ying -->
         <video autoplay muted loop id="heroVideo" style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
             <source src="https://videos.pexels.com/video-files/3371015/3371015-hd_1920_1080_30fps.mp4" type="video/mp4">
             Sizning brauzeringiz video formatini qo'llab-quvvatlamaydi.
@@ -40,7 +35,6 @@
     <section class="video-section container" id="menu">
         <h2>Bizning Taomlar</h2>
         <div class="video-container">
-            <!-- ASOSIY VIDEO (Dastlab spaghetti ko'rsatiladi) -->
             <video id="mainVideo" autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
                 <source src="https://videos.pexels.com/video-files/4058085/4058085-uhd_2732_1440_25fps.mp4" type="video/mp4">
             </video>
@@ -50,39 +44,36 @@
         </div>
 
         <div class="food-nav">
-            <!-- SPAGHETTI -->
             <div class="food-item active" data-video="https://videos.pexels.com/video-files/4058085/4058085-uhd_2732_1440_25fps.mp4" data-title="Spaghetti">
                 <img src="https://espanarusa.com/files/autoupload/43/73/89/bw4ilems397658.jpg" alt="Spaghetti" class="food-thumbnail">
                 <div class="food-name">Spaghetti</div>
             </div>
-            
-            <!-- KOFE -->
+
             <div class="food-item" data-video="https://cdn.pixabay.com/video/2025/03/03/262184_large.mp4" data-title="Kofe">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0XeFT3LDaHpdDBfbBhv6tGV7vw0hA6RctBQ&s" alt="Kofe" class="food-thumbnail">
                 <div class="food-name">Kofe</div>
             </div>
-            
-            <!-- BLINCHIK -->
+
             <div class="food-item" data-video="https://videos.pexels.com/video-files/3704910/3704910-uhd_2732_1440_25fps.mp4" data-title="Blinchik">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUbV7RHXugm-8R2CMNAc5i3EquRj5eSCAtBg&s" alt="Blinchik" class="food-thumbnail">
                 <div class="food-name">Blinchik</div>
             </div>
-            <!-- Burger -->
+
             <div class="food-item" data-video="https://videos.pexels.com/video-files/8879537/8879537-uhd_2732_1440_25fps.mp4" data-title="Burger">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4guNpCpmdtRB4QyoyTOOxz6NlshGhjBjjyg&s" alt="burger" class="food-thumbnail">
                 <div class="food-name">Burger</div>
             </div>
-            <!-- Pitsa -->
+
             <div class="food-item" data-video="https://videos.pexels.com/video-files/4008533/4008533-uhd_2732_1440_25fps.mp4" data-title="Pitsa">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXYdyfuOHBUJD9b3cmRxy6tGZGCd2ylQpR4A&s" alt="pitsa" class="food-thumbnail">
                 <div class="food-name">Pitsa</div>
             </div>
-            <!-- Steak -->
+
             <div class="food-item" data-video="https://videos.pexels.com/video-files/3209830/3209830-uhd_2560_1440_25fps.mp4" data-title="Stek">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98B3cw_Oey595LLHkqloqBSDM0Eva9l9ERQ&s" alt="steak" class="food-thumbnail">
                 <div class="food-name">Stek</div>
             </div>
-            <!--  -->
+
             <div class="food-item" data-video="https://videos.pexels.com/video-files/6162075/6162075-hd_1920_1080_30fps.mp4" data-title="Tovuq Go'shti">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNEwI65PvBG8qjKP6jk3ksRO-8McMJgqwijA&s" alt="chicken" class="food-thumbnail">
                 <div class="food-name">Tovuq Go'shti</div>
@@ -128,9 +119,22 @@
         </div>
     </footer>
 
+    <!-- 🔊 MUSIQA: avtomatik ijro -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="https://cdn.pixabay.com/audio/2022/05/04/audio_a775baef3b.mp3" type="audio/mpeg">
+        Sizning brauzeringiz audio-ni qo'llab-quvvatlamaydi.
+    </audio>
+
+    <script>
+        // Musiqa autoplayni browser bloklasa, qayta uriniladi
+        window.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('backgroundMusic');
+            audio.play().catch(error => {
+                console.warn("Audio autoplay bloklandi:", error);
+            });
+        });
+    </script>
+
     <script src="./script.js"></script>
 </body>
-
 </html>
-
-
